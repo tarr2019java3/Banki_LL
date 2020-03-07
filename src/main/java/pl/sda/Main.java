@@ -6,6 +6,7 @@ import java.io.File;
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
@@ -42,10 +43,46 @@ public class Main {
         } catch (IOException e) {
             e.printStackTrace();
         }
+        Scanner scanner = new Scanner(System.in) ;
+        int ID =scanner.nextInt() ;
+        int bankAccountID = ID ;
+        System.out.println("Podaj ID  konta");
+        switch (bankAccountID) {
+            case 1 :
+                System.out.println( "Imie " + user.getName());
+                System.out.println("Nazwisko " + user.getLastname());
+                System.out.println( "Wiek " + user.getAge());
+                System.out.println("Numer Konta " + bankAccount.getAccountNumber());
+                System.out.println( "srodki na koncie " + bankAccount.getBalance());
+                break ;
+            case 2 :
+                System.out.println( "Imie " + user2.getName());
+                System.out.println("Nazwisko " + user2.getLastname());
+                System.out.println( "Wiek " + user2.getAge());
+                System.out.println("Numer Konta " + bankAccount2.getAccountNumber());
+                System.out.println( "srodki na koncie " + bankAccount2.getBalance());
+                break ;
+            case 3 :
+                System.out.println( "Imie " + user3.getName());
+                System.out.println("Nazwisko " + user3.getLastname());
+                System.out.println( "Wiek " + user3.getAge());
+                System.out.println("Numer Konta "  + bankAccount3.getAccountNumber());
+                System.out.println( "srodki na koncie " + bankAccount3.getBalance());
+                break ;
+
+            case  4 :
+                System.out.println( "Imie " + user4.getName());
+                System.out.println("Nazwisko " + user4.getLastname());
+                System.out.println( "Wiek " + user4.getAge());
+                System.out.println("Numer Konta "  +bankAccount4.getAccountNumber());
+                System.out.println( "srodki na koncie " + bankAccount4.getBalance());
+                break ;
 
 
-        System.out.println(user4.getName()) ;
-        System.out.println(user4.getLastname());
-        System.out.println(user4.getBankAccount().getBalance());
+        }
+
+      //  System.out.println(user4.getName()) ;
+      //  System.out.println(user4.getLastname());
+     //   System.out.println(user4.getBankAccount().getBalance());
     }
 }
