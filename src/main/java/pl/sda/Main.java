@@ -44,9 +44,10 @@ public class Main {
             e.printStackTrace();
         }
         Scanner scanner = new Scanner(System.in) ;
+        System.out.println("Podaj ID  konta ");
         int ID =scanner.nextInt() ;
         int bankAccountID = ID ;
-        System.out.println("Podaj ID  konta");
+
         switch (bankAccountID) {
             case 1 :
                 System.out.println( "Imie " + user.getName());
@@ -76,7 +77,7 @@ public class Main {
                 System.out.println( "Wiek " + user4.getAge());
                 System.out.println("Numer Konta "  +bankAccount4.getAccountNumber());
                 System.out.println( "srodki na koncie " + bankAccount4.getBalance());
-                break ;
+            default :
 
 
         }
